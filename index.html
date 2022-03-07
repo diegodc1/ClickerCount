@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador Númerico</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <p class="counter" id="counter">0</p>
+
+        <div class="buttons">
+          <div class="addButton">
+            <button id="addButton" onclick="addNumber()">+</button>
+          </div>
+
+          <div class="removeButton">
+            <button id="removeButton" onclick="removeNumber()">-</button>
+          </div>
+        </div>
+
+        <div class="resetButton">
+          <button id="resetButton" onclick="resetNumber()">Redefinir</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

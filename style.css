@@ -1,0 +1,108 @@
+:root {
+  --green: #2fd826;
+  --red: #d83426;
+  --grey: #969796;
+  --bg: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  font-family: "Secular One", sans-serif;
+}
+
+main {
+  width: min(80vw, 800px);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  font-size: 15rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  width: 100%;
+  margin-top: 4rem;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(105%);
+}
+
+.addButton,
+.removeButton,
+.resetButton {
+  width: 100%;
+}
+
+.resetButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 2rem;
+}
+
+.addButton button,
+.removeButton button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8rem;
+  font-size: 8rem;
+  border-style: none;
+  border-radius: 60px;
+}
+
+.resetButton button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+
+  width: 49%;
+  height: 8rem;
+  border-style: none;
+  border-radius: 60px;
+  border: 3px solid var(--grey);
+  color: var(--grey);
+
+  font-weight: 600;
+}
+
+.addButton button {
+  background: var(--green);
+}
+
+.removeButton button {
+  background: var(--red);
+}
