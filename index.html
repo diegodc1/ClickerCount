@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contador Númerico</title>
 
+    <meta
+      name="description"
+      content="Contador numérico online | Simples e Rápido"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Contador numérico online | Simples e Rápido"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
     <!-- Style -->
     <link rel="stylesheet" href="style.css" />
 
@@ -12,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&family=Secular+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,400&family=Secular+One&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -33,6 +47,20 @@
 
         <div class="resetButton">
           <button id="resetButton" onclick="resetNumber()">Redefinir</button>
+        </div>
+
+        <div class="footer">
+          <button id="muteButton" onclick="muteSound()">
+            <img
+              id="muteImage"
+              src="/assets/volume-mute.svg"
+              alt="Icone mutar som"
+            />
+          </button>
+        </div>
+
+        <div class="author-name">
+          <p>Feito por Diego Alves</p>
         </div>
       </div>
     </main>
