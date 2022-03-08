@@ -191,6 +191,10 @@ button:hover {
     position: relative;
     margin-top: 2rem;
   }
+
+  .info {
+    display: none;
+  }
 }
 
 @media (min-width: 1800px) {
