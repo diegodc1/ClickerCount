@@ -81,6 +81,8 @@ button:hover {
   font-size: 8rem;
   border-style: none;
   border-radius: 60px;
+
+  style: none;
 }
 
 .resetButton button {
