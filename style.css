@@ -154,6 +154,10 @@ button:hover {
   line-height: -20px;
 }
 
+.info img:nth-child(2) {
+  margin-left: 1rem;
+}
+
 .info span {
   font-weight: 700;
   font-size: 1.5rem;
