@@ -41,3 +41,17 @@ function muteSound() {
     muteImage.src = "/assets/volume-muted.svg";
   }
 }
+
+document.addEventListener("keyup", function (event) {
+  if (event.key === "+" || event.key === "ArrowUp") {
+    addNumber();
+  } else if (event.key === "-" || event.key === "ArrowDown") {
+    removeNumber();
+  } else if (event.key === "r" || event.key === "R") {
+    resetNumber();
+  }
+});
+
+// document.addEventListener("keyup", function (event) {
+//   console.log(event.key);
+// });

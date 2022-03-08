@@ -82,7 +82,7 @@ button:hover {
   border-style: none;
   border-radius: 60px;
 
-  style: none;
+  outline-style: none;
 }
 
 .resetButton button {
@@ -125,6 +125,43 @@ button:hover {
   border-style: none;
   border: 3px solid var(--grey);
   border-radius: 60px;
+}
+
+/* Info */
+.info {
+  margin-top: 4rem;
+}
+
+.info li {
+  font-size: 1.8rem;
+}
+
+.info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  font-size: 1.8rem;
+}
+
+.info img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0rem 1rem 0rem 0rem;
+  border: 1px solid black;
+  border-radius: 999px;
+  padding: 0.4rem;
+  line-height: -20px;
+}
+
+.info span {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.6rem;
+  margin: 0rem 0.6rem 0rem 0rem;
+  border: 1px solid black;
+  border-radius: 999px;
 }
 
 .author-name {
