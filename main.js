@@ -14,18 +14,29 @@ function addNumber() {
   counterNumber++;
   counter.textContent = counterNumber;
   addSoundEffect.play();
+  changeColorNegativeNumber();
 }
 
 function removeNumber() {
   counterNumber--;
   counter.textContent = counterNumber;
   removeSoundEffect.play();
+  changeColorNegativeNumber();
 }
 
 function resetNumber() {
   counterNumber = 0;
   counter.textContent = counterNumber;
   resetSound.play();
+  changeColorNegativeNumber();
+}
+
+function changeColorNegativeNumber() {
+  if (counterNumber < 0) {
+    counter.classList.add("red");
+  } else {
+    counter.classList.remove("red");
+  }
 }
 
 function muteSound() {
